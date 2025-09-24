@@ -1,1 +1,9 @@
-<p>heroes-page works!</p>
+<h1>Heroien Zerrenda</h1>
+
+<ul>
+  <li *ngFor="let hero of heroes">
+    <a routerLink="['/hero', hero.id]">{{ hero.name }}</a>
+  </li>
+</ul>
+
+<a routerLink="/">Itzuli Hasierara</a>

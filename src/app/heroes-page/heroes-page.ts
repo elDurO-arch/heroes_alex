@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HEROES } from '../datuak-heroes';
+import { Hero } from '../hero';
 
 @Component({
   selector: 'app-heroes-page',
@@ -7,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './heroes-page.css'
 })
 export class HeroesPage {
-
+  heroes: Hero[] = HEROES;
 }
