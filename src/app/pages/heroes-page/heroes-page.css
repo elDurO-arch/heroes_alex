@@ -1,14 +1,20 @@
 .heroes-list {
   list-style: none;
   padding: 0;
+  width: 280px; /*mas estrecho*/
 }
-
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .hero-item {
   padding: 12px;
   border-bottom: 2px solid #FFDD00;
   background: #0075A9;
   border-radius: 8px;
   margin-bottom: 10px;
+  
 }
 
 .hero-item a {
@@ -16,6 +22,16 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1.1em;
+  text-decoration: none;
+}
+.hero-item:hover{
+  transform: translateY(-2px);
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .left-side {
@@ -32,11 +48,32 @@
   color: red;
   font-weight: bold;
 }
-
-.inicio{
-    padding: 12px;
+.delete {
+  background-color: #FFDD00;
+  border: none;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 10px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+.delete:hover {
+  background-color: #ffcc00;
+}
+ .inicio {
+  padding: 8px 10px;
   border-bottom: 2px solid #FFDD00;
   background: #0075A9;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  width: 280px;
+  margin: 0 auto;
+  display: inline-block; /* para que se vea como botón */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
 }
+
+

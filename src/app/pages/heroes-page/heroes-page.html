@@ -4,19 +4,18 @@
   @for (hero of heroes; track hero.id) {
     <li class="hero-item">
       <!-- <a routerLink=/hero">-->
-        <a [routerLink]="['/hero', hero.id]">
-          <div class="left-side">
-            {{hero.id}}
-          </div>
-          <div class="main">
-            {{hero.name}}
-          </div>
+        <div class="hero-content">
+          <a [routerLink]="['/hero', hero.id]">
+            <div class="left-side">{{ hero.id }}</div>
+            <div class="main">{{ hero.name }}</div>
+          </a>
           <div class="right-side">
-            x
+            <button class="delete" (click)="deleteHero(hero.id); $event.stopPropagation()">x</button>
           </div>
-        </a>
+        </div>
+
     </li>
   }
 
 </ul>
-<a  class="Inicio" routerLink="/">Inicio</a>
+<a  class="inicio" routerLink="/">Inicio</a>

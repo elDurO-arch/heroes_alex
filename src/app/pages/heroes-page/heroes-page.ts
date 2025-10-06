@@ -11,4 +11,12 @@ import { RouterLink } from '@angular/router';
 })
 export class HeroesPage {
   heroes: Hero[] = HeroesList;
+
+  deleteHero(id: number) {
+  this.heroes = this.heroes.filter(hero => hero.id !== id);
+}
+trackByHeroId(index: number, hero: Hero): number {
+    return hero.id;
+  }
+
 }

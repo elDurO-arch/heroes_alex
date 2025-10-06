@@ -31,13 +31,15 @@ a:hover {
   font-weight: bold;
   font-size: 1.1em;
   box-shadow: 0 4px black;
+  margin-top: 6px;
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .button:hover {
-  background-color: black;
+  background-color: #e7c903;
   transform: translateY(-2px);
   box-shadow: 0 6px black;
+
 }
 
 /* ===== Contenedor principal ===== */
