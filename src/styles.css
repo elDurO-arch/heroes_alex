@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Tipografía y colores ===== */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #FFDD00;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Botones estilo Comic-Con ===== */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFDD00;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 4px black;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.button:hover {
+  background-color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 6px black;
+}
+
+/* ===== Contenedor principal ===== */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

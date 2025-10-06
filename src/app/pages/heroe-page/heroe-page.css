@@ -1,0 +1,30 @@
+.hero-detail {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #FF99FF, #99CCFF);
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.hero-detail h1 {
+  font-size: 2.5em;
+  color: #FFDD00;
+  text-shadow: 2px 2px black;
+  margin-bottom: 15px;
+}
+
+.hero-detail p {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.hero-detail a {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 15px;
+  background: #00CCFF;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}

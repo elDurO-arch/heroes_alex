@@ -1,0 +1,42 @@
+.heroes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.hero-item {
+  padding: 12px;
+  border-bottom: 2px solid #FFDD00;
+  background: #0075A9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.hero-item a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.left-side {
+  font-weight: bold;
+  color: #FFDD00;
+}
+
+.main {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.right-side {
+  color: red;
+  font-weight: bold;
+}
+
+.inicio{
+    padding: 12px;
+  border-bottom: 2px solid #FFDD00;
+  background: #0075A9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

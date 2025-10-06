@@ -1,0 +1,46 @@
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #FFDD00;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #0075A9;
+  text-shadow: 1px 1px #000;
+  margin-bottom: 15px;
+}
+
+.heroes-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.hero-item {
+  background:#0075A9;
+  padding: 15px;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.hero-item:hover {
+  transform: translateY(-5px);
+}
+
+.left-side {
+  font-weight: bold;
+}
