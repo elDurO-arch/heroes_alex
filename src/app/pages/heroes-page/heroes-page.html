@@ -1,5 +1,10 @@
 <h1>My Heroes</h1>
 
+<form class="add-form" [formGroup]="heroForm" (ngSubmit)="addHero()">
+  <input formControlName="name" placeholder="Nuevo héroe" />
+  <button type="submit" [disabled]="heroForm.invalid">Añadir</button>
+</form>
+
 <ul class="heroes-list">
   @for (hero of heroes; track hero.id) {
     <li class="hero-item">
@@ -13,7 +18,6 @@
             <button class="delete" (click)="deleteHero(hero.id); $event.stopPropagation()">x</button>
           </div>
         </div>
-
     </li>
   }
 
